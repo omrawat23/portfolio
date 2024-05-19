@@ -24,7 +24,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (
+   return (
     <nav
       className={`${
         styles.paddingX
@@ -37,12 +37,12 @@ const Navbar = () => {
           <Link to='https://www.linkedin.com/in/om-rawat-1b173127b/' target="_blank" >
             <img src="https://i.postimg.cc/xTTRqW8v/icons8-linkedin-48.png" alt='LinkedIn logo' className='w-9 h-9 object-contain' />
           </Link>
-          <Link to="https://github.com/omrawat23">
+          <Link to="https://github.com/omrawat23"  target="_blank">
             <img src="https://img.icons8.com/stickers/100/github.png" alt='GitHub logo' className='w-9 h-9 object-contain' />
           </Link>
-          <Link to="">
+          <a href="src\assets\Om Resume.pdf" target="_blank">
             <img src="https://img.icons8.com/matisse/100/pdf.png" alt='PDF logo' className='w-9 h-9 object-contain' />
-          </Link>
+            </a>
           <Link
           to='/'
           className='flex items-center gap-2'
